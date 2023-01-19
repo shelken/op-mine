@@ -61,7 +61,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [Lede_source_cr660x]
+        target: [Lede_source_newifi]
 
         # [Lede_source_newifi,Lede_source_k2p_mine,Mortal_source_cr660x,Lede_source_k2p_home,Lede_source_cr660x,Lede_source,Lienol_source,Mortal_source,Tianling_source,openwrt_amlogic]
 

@@ -37,6 +37,7 @@ on:
           - 'xiaomi_redmi-router-ac2100'
           - 'xiaomi_redmi-router-ax6s'
           - 'xiaoyu_xy-c5'
+          - 'cr660x'
       CPU_SELECTION:
         description: 'CPU优选,增加编译速度'
         required: true
@@ -115,9 +116,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [Lede_cr660x]
+        target: [Lede]
         
-        # 请勿对 target: [Lede_cr660x] 做任何修改
+        # 请勿对 target: [Lede] 做任何修改
         
     steps:
     - name: 密匙检测（密匙为空则退出）

@@ -37,7 +37,6 @@ on:
           - 'xiaomi_redmi-router-ac2100'
           - 'xiaomi_redmi-router-ax6s'
           - 'xiaoyu_xy-c5'
-          - 'cr660x'
       CPU_SELECTION:
         description: 'CPU优选,增加编译速度'
         required: true
@@ -131,7 +130,7 @@ jobs:
         fi
     
     - name: 准备结束
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: 检测文件和对比上游版本
       run: |

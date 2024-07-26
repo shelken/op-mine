@@ -23,9 +23,20 @@ on:
       CONFIG_FILE:
         description: '请选择配置文件'
         required: true
-        default: 'cr660x'
+        default: 'x86_64'
         type: choice
         options:
+          - 'aarch64'
+          - 'asus_rt-acrh17'
+          - 'd-team_newifi-d2'
+          - 'p2w_r619ac-128m'
+          - 'phicomm_k2p'
+          - 'x86_32'
+          - 'x86_64'
+          - 'xiaomi_mi-router-4a-gigabit'
+          - 'xiaomi_redmi-router-ac2100'
+          - 'xiaomi_redmi-router-ax6s'
+          - 'xiaoyu_xy-c5'
           - 'cr660x'
       CPU_SELECTION:
         description: 'CPU优选,增加编译速度'
@@ -59,7 +70,7 @@ on:
       UPLOAD_RELEASE:
         description: '发布固件到 Github Releases'
         required: false
-        default: 'true'
+        default: 'false'
         type: boolean
       CACHEWRTBUILD_SWITCH:
         description: '缓存加速编译'
@@ -105,7 +116,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [Lede_cr660x]
+        target: [Lede]
         
         # 请勿对 target: [Lede] 做任何修改
         

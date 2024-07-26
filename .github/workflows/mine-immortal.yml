@@ -33,6 +33,7 @@ on:
         options:
           - 'x86_64'
           - 'aarch64'
+          - 'cr660x'
       CPU_SELECTION:
         description: 'CPU优选,增加编译速度'
         required: true
@@ -46,7 +47,7 @@ on:
       INFORMATION_NOTICE:
         description: 'Telegram或pushplus信息通知'
         required: true
-        default: '关闭'
+        default: 'Telegram'
         type: choice
         options:
           - '关闭'
@@ -65,7 +66,7 @@ on:
       UPLOAD_RELEASE:
         description: '发布固件到 Github Releases'
         required: false
-        default: 'false'
+        default: 'true'
         type: boolean
       CACHEWRTBUILD_SWITCH:
         description: '缓存加速编译'
@@ -75,7 +76,7 @@ on:
       UPDATE_FIRMWARE_ONLINE:
         description: '增加在线更新固件功能/自动打包Amlogic_Rockchip系列固件'
         required: false
-        default: 'true'
+        default: 'false'
         type: boolean
       COMPILATION_INFORMATION:
         description: '是否显示编译信息'

@@ -9,7 +9,7 @@ on:
     branches:
       - main
     paths:
-      - 'build/mine-lede/relevance/start'
+      - 'build/mine-immortal/relevance/start'
 
 env:
   GITHUB_LINK: https://github.com/${{github.repository}}
@@ -35,7 +35,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [mine-lede]
+        target: [mine-immortal]
 
     steps:    
     - name: 准备结束
